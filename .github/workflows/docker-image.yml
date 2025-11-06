@@ -30,7 +30,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./BACKEND/server
-          file: ./BACKEND/serrver/backend.Dockerfile
+          file: ./BACKEND/server/backend.Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ansible-backend:latest
 
